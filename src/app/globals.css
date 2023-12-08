@@ -825,7 +825,7 @@ h1, h2, h3, h4, h5{
 
   .banner-3-container{
     background: url('./images/banner-3-mobile-wa.png') center/cover no-repeat;
-    height: 180vh;
+    height: 200vh;
     padding: 3rem 0;
     width: 100%;
 
@@ -862,7 +862,7 @@ h1, h2, h3, h4, h5{
   /* BANNER 4 */
 
   .banner-4-container{
-    height: 120vh;
+    height: 140vh;
     align-items: initial;
   }
   .banner-4{
@@ -886,7 +886,7 @@ h1, h2, h3, h4, h5{
 
   /* BANNER 5 */
   .banner-5-container{
-    height: 150vh;
+    height: 160vh;
     display: flex;
     flex-direction: column;
     justify-content: initial;
@@ -957,7 +957,7 @@ h1, h2, h3, h4, h5{
   /* BANNER 5 */
 
   .banner-5 .card{
-    max-width: 500px;
+    max-width: 540px;
     width: 95%;
     height: 480px;
     padding: 2rem;
