@@ -1,113 +1,218 @@
+"use client"
+
 import Image from 'next/image'
+import Link from 'next/link'
+import Star from '@/app/images/star.png'
+import Card1 from '@/app/images/card-1-full.png'
+import Card2 from '@/app/images/card-2-full.png'
+import Selo from '@/app/images/selo.png'
+import {motion} from 'framer-motion'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main>
+
+      {/* BANNER 1 */}
+
+      <section className='banner-1-container'>
+        <article className="banner-1 container">
+          <motion.div className="text"
+          initial={{ opacity: 0, x: -100}}
+          whileInView={{ opacity: 1, x: 0}}
+          exit={{opacity: 0, x: -100}}
+          transition={{duration: 0.5}}
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+            <h1>O guia completo para morar em Portugal em 2024!</h1>
+            <p>Morar em um país de primeiro mundo, <b>compras no mercado com menos de 100 euros, tomar bons vinhos, viver em um clima europeu e ter qualidade de vida.</b>
+            </p>
+            {/* <br /> */}
+            <p>Sim! Esses entre outros inúmeros motivos me fizeram <b>mudar para Portugal</b> e aqui eu te entrego <b>tudo que gostaria de saber</b> quando tomei essa decisão.</p>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+            <Link href='/'><button className='btn'>Quero <b>morar</b> em <b>Portugal</b></button></Link>
+          </motion.div>
+          <div className='blank-field'></div>
+        </article>
+      </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      {/* BANNER 2 */}
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section className='banner-2-container'>
+        <article className='banner-2 container'>
+          <div className='blank-field'></div>
+            <motion.div className='text'
+            initial={{ opacity: 0, x: 100}}
+            whileInView={{ opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 100}}
+            transition={{duration: 0.5}}
+            >
+              <p>
+                <b>Viver no Brasil está cada vez mais complicado,</b> cada
+                ano que passa a única certeza é o <b>aumento dos preços</b>
+                e da <b>dificuldade de conquistar algo grandios</b> o com
+                o suor e trabalho duro do brasileiro.
+              </p>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+              <p>
+                Quando pensamos em <b>soluções</b>, já visamos <b>mudar de país</b>. Afinal, é bem mais fácil chegar em um país pronto
+                e dedicar-se a um crescimento financeiro que logo trará bons frutos devido à economia saudável dele. 
+              </p>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+              <p>
+                <b>Com isso, em 2009 decidi sair do país e arriscar uma
+                vida em um gigante europeu,</b> logo cheguei a portugal
+                e em poucos meses de trabalho já vi resultado financeiro, consegui pagar as contas e ainda sobrar dinheiro para viagens e um bom vinho.
+              </p>
+            </motion.div>
+        </article>
+      </section>
+
+      {/* BANNER 3 */}
+
+      <section className="banner-3-container">
+        <article className="banner-3 container">
+
+          <div className="sub-1">
+              <motion.div className="text"
+              initial={{ opacity: 0, x: -100}}
+              whileInView={{ opacity: 1, x: 0}}
+              exit={{opacity: 0, x: -100}}
+              transition={{duration: 0.5}}
+              >
+                <h2>O guia completo que te levará em Portugal em 2024!</h2>
+                <span>obs* sem burocracia</span>
+                <p>Aqui desenvolvi um e-book completo onde você
+                terá mais de 70 páginas ensinando como se
+                preparar para ir a portugal!
+                </p>
+              </motion.div>
+              <div className="blank-field"></div>
+          </div>
+
+          {/* <Image src={Arrow} width={1200} height={1200} alt='arrow'/> */}
+
+          <div className="sub-2">
+            <div className="blank-field"></div>
+              <motion.div className="text"
+              initial={{ opacity: 0, x: 100}}
+              whileInView={{ opacity: 1, x: 0}}
+              exit={{opacity: 0, x: 100}}
+              transition={{duration: 0.5}}
+              >
+                <h2>Neste e-book você aprenderá:</h2>
+                <ul>
+                  <li>
+                      <Image src={Star} width={20} height={20} alt='arrow'/>
+                    Imposto de Renda</li>
+                  <li>
+                      <Image src={Star} width={20} height={20} alt='arrow'/>
+                    Abrir uma conta bancária</li>
+                  <li>
+                      <Image src={Star} width={20} height={20} alt='arrow'/>
+                    O manual para vir para Portugal</li>
+                  <li>
+                      <Image src={Star} width={20} height={20} alt='arrow'/>
+                    Onde ir para fazer a documentção</li>
+                  <li>
+                      <Image src={Star} width={20} height={20} alt='arrow'/>
+                    Como fazer os documentos básicos (NIF, NISS, Passaporte, Comprovante de morada, SEF, entre outros).</li>
+                </ul>
+                <Link href='/'>
+                  <button className='btn'>Quero <b>morar</b> em <b>Portugal</b></button>
+                </Link>
+              </motion.div>
+          </div>
+
+        </article>
+      </section>
+
+      {/* BANNER 4 */}
+
+      <section className="banner-4-container">
+        <article className="banner-4 container">
+          <div className="cards-container">
+            <motion.div className="card"
+            initial={{ opacity: 0, y: -100}}
+            whileInView={{ opacity: 1, y: 0}}
+            exit={{opacity: 0, y: -100}}
+            transition={{duration: 0.5}}
+            >
+              <Image src={Card1} alt='cards' width={600} height={600}/>
+              <button className='btn' id='btn1'>Ofertas <b>válidas</b> até dia <b>31/12/2023*</b></button>
+            </motion.div>
+            <motion.div className="card"
+            initial={{ opacity: 0, y: -100}}
+            whileInView={{ opacity: 1, y: 0}}
+            exit={{opacity: 0, y: -100}}
+            transition={{duration: 0.5}}
+            >
+              <Image src={Card2} alt='cards' width={600} height={600}/>
+              <Link href='/'>
+                <button className='btn'>Quero <b>morar</b> em <b>Portugal</b></button>
+              </Link>
+            </motion.div>
+          </div>
+        </article>
+      </section>
+
+      {/* BANNER 5 */}
+
+      <section className="banner-5-container">
+        <article className="banner-5 container">
+        <div className="cards-container">
+            <motion.div className="card"
+            initial={{ opacity: 0, x: -100}}
+            whileInView={{ opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -100}}
+            transition={{duration: 0.5}}
+            >
+              <h2>Oferta Exclusiva</h2>
+              <div>
+                <p>Guia completo de documentação para sair do Brasil e morar em Portugal <b>(R$499,90)</b></p>
+                <p>Aulão completo com passo a passo para iniciar sua jornada <b>(R$199,90)</b></p>
+                <p>Checklist de documentação <b>(R$47,90)</b></p>
+                <p>Grupo exclusivo <b>(R$97,90)</b></p>
+                <p>Live de acompanhamento <b>(R$149,90)</b></p>
+              </div>
+
+              <span id='price'>
+                <p>
+                  DE R$ 995,50
+                </p>
+
+                <p>
+                  POR 10X de
+                </p>
+
+                <h3>
+                  15,90
+                </h3>
+
+                <small>
+                  OU R$147,00 à vista
+                </small>
+              </span>
+
+              <Link href='/'>
+                <button className='btn'>Quero <b>meu desconto</b></button>
+              </Link>
+            </motion.div>
+
+            <motion.div className="card" id='b5-card-2'
+            initial={{ opacity: 0, x: 100}}
+            whileInView={{ opacity: 1, x: 0}}
+            exit={{opacity: 0, x: 100}}
+            transition={{duration: 0.5}}
+            >
+
+              <Image src={Selo} alt='selo' width={0} height={0}/>
+              <p>Após adquirir o e-book, <b>você terá 7 dias</b> para acompanhar os conteúdos e se adaptar.
+              </p>
+              <p>Se dentro desse período, <b>você sentir que não é pra você,</b> é só me pedir que eu devolvo 100% do valor investido.</p>
+            </motion.div>
+          </div>
+        </article>
+      </section>
+
     </main>
   )
 }

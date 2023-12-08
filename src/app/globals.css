@@ -2,26 +2,953 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* @font-face{
+  font-family: Rachelya;
+  src: url("../dropkicker/Dropkicker-Bold-BF64e5680a78a81.otf");
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+body{
+  font-family: 'Poppins', sans-serif;
+  color: #4F291C;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Rachelya', sans-serif;
+  color: #4F291C;
+}
+
+@keyframes bouncing {
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.15);
+  }
+  100%{
+    transform: scale(1);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.container{
+  max-width: 1280px;
+}
+
+.btn{
+  padding: .75rem 1.25rem;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #fff;
+  /* background-color: #DDAC8D; */
+  background-color: rgba(194, 150, 123, 0.936);
+
+  transition: all .3s;
+
+  /* animation-name: bouncing;
+  animation-iteration-count: infinite;
+  animation-duration: 2000ms; */
+}
+.btn:hover{
+  transform: scale(1.025);
+}
+
+/* Banner 1 */
+
+.banner-1-container{
+  background: url('./images/banner-1.png') center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* border: 5px solid #000; */
+  padding-top: 4rem;
+}
+
+.banner-1{
+  width: 80%;
+  height: 80vh;
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.banner-1 .text{
+  width: 55%;
+}
+.banner-1 .text h1{
+  font-size: 60px;
+  color: maroon;
+  margin-bottom: 20px;
+}
+.banner-1 .text p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  max-width: 25em;
+  margin-bottom: 40px;
+}
+.banner-1 .text .btn{
+  padding: .75rem 1.25rem;
+  font-size: 25px;
+  border-radius: 10px;
+  color: #fff;
+  /* background-color: #DDAC8D; */
+  background-color: rgba(194, 150, 123, 0.936);
+
+  transition: all .3s;
+}
+.banner-1 .text .btn:hover{
+  transform: scale(1.025);
+}
+
+.banner-1 .blank-field{
+  width: 45%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+
+/* Banner 2 */
+
+.banner-2-container{
+  background: url('./images/banner-2.png') left/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid #000; */
+  padding-top: 4rem;
+}
+
+.banner-2{
+  width: 80%;
+  height: 80vh;
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.banner-2 .text{
+  width: 70%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+
+.banner-2 .text p{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.banner-2 .blank-field{
+  width: 30%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+
+/* Banner 3 */
+
+.banner-3-container{
+  background: url('./images/banner-3-wa.jpg') center/cover no-repeat;
+  min-height: 120vh;
+  width: 100%;
+  /* border: 1px solid #000; */
+  /* padding-top: 4rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-3{
+  width: 80%;
+  height: 100vh;
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: initial;
+
+  margin: 0 auto;
+}
+.banner-3 .text{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+.banner-3 .blank-field{
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+
+.banner-3 .text h2{
+  font-size: 60px;
+  color: maroon;
+  margin-bottom: 20px;
+}
+.banner-3 .sub-1 .text span{
+  color: maroon;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.banner-3 .sub-1 .text p{
+  font-size: 40px;
+}
+.banner-3 .sub-2 .text ul{
+  font-size: 35px;
+  list-style-type: none;
+}
+.banner-3 .sub-2 .text ul li{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 0.5rem 0;
+  gap: 10px;
+}
+.banner-3 .text .btn{
+  margin-top: 1rem;
+  font-size: 40px;
+}
+
+.sub-1, .sub-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Banner 4 */
+
+.banner-4-container{
+  background: url('./images/banner-4.png') center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 5px solid red; */
+}
+.banner-4{
+  width: 80%;
+  height: 100vh;
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: initial;
+
+  margin: 0 auto;
+}
+
+.cards-container{
+  /* border: 5px solid red; */
+  height: 80%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+.cards-container img{
+  /* border-radius: 10px; */
+  width: 100%;
+  transition: all .3s;
+}
+.card{
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  /* border: 5px solid red; */
+}
+.card img:hover{
+  transform: translateY(-20px);
+  box-shadow: 2px 5px 10px beige;
+}
+
+.card #btn1{
+  background-color: transparent;
+  border: 1px solid maroon;
+  color: maroon;
+}
+
+/* Banner 5 */
+
+.banner-5-container{
+  background: url('./images/banner-4.png') center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 5px solid red; */
+}
+
+.banner-5{
+  width: 100%;
+  height: 100vh;
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: initial;
+
+  margin: 0 auto;
+}
+
+.banner-5 .cards-container{
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.banner-5 .card{
+  width: 600px;
+  height: 900px;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ffffffc1;
+  border-radius: 10px;
+
+  transition: all .3s;
+  /* border: 5px solid red; */
+}
+.banner-5 .card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0px 10px 30px 2px rgb(208, 70, 70);
+}
+.banner-5 .card h2{
+  font-size: 40px;
+}
+.banner-5 .card div{
+  font-size: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 25em;
+}
+.banner-5 #b5-card-2{
+  background-color: transparent;
+  border: 1px solid maroon;
+
+  /* text-align: center; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-5 #b5-card-2 img{
+  width: auto;
+}
+.banner-5 #b5-card-2 p{
+  font-size: 25px;
+}
+#price{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 3rem;
+}
+#price p{
+  color: grey;
+  font-size: 30px;
+}
+#price h3{
+  font-size: 60px;
+}
+#price small{
+  color: grey;
+  font-size: 18px;
+}
+
+/************* MEDIA QUERY ****************/
+
+@media (max-width: 2560px){
+
+  /* BANNER 2 */
+
+  .banner-1-container .container{
+    max-width: 1700px;
+  }
+  .banner-1 .text{
+    width: 90%;
+  }
+  .banner-1 .text h1{
+    font-size: 80px;
+  }
+  .banner-1 .text p{
+    font-size: 40px;
+  }
+  .banner-1 .text .btn{
+    font-size: 40px;
+  }
+
+  /* BANNER 2 */
+
+  .banner-2-container .container{
+    max-width: 1700px;
+  }
+  .banner-2-container{
+    background: url('./images/banner-2.png') left/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+  .banner-2{
+    width: 100%;
+  }
+  .banner-2 .text{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner-2 .text p{
+    font-size: 35px;
+  }
+  .banner-2 .blank-field{
+    width: 55%;
+  }
+
+   /* BANNER 3 */
+
+   .banner-3-container .container{
+    max-width: 1700px;
+  }
+
+   /* BANNER 4 */
+
+   .banner-4-container .container{
+    max-width: 1700px;
+  }
+  .cards-container{
+    /* border: 5px solid red; */
+    height: 80%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+  }
+  .cards-container img{
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Banner 5 */
+
+  .banner-5-container .container{
+    max-width: 1700px;
+  }
+}
+
+@media (max-width: 1600px){
+
+  /* Banner 1 */
+
+  .banner-1 .text{
+    width: 50%;
+  }
+  .banner-1 .text h1{
+    font-size: 45px;
+  }
+  .banner-1 .text p{
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .banner-1 .text .btn{
+    font-size: 25px;
+  }
+  .banner-1 .blank-field{
+    width: 50%;
+  }
+
+  /* Banner 2 */
+
+  .banner-2-container .container{
+    max-width: 1280px;
+  }
+  .banner-2{
+    width: 80%;
+  }
+  .banner-2 .text{
+    width: 50%;
+  }
+  .banner-2 .text p{
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .banner-2 .blank-field{
+    width: 50%;
+  }
+
+  /* Banner 3 */
+
+  .banner-3 .text h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .banner-3 .sub-1 .text span{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .banner-3 .sub-1 .text p{
+    font-size: 22px;
+  }
+  .banner-3 .sub-2 .text ul{
+    font-size: 20px;
+  }
+  .banner-3 .text .btn{
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+
+  /* BANNER 4 */
+
+  .cards-container{
+    flex-direction: row;
+    gap: 20px;
+  }
+  .cards-container img{
+    border-radius: 10px;
+    width: 80%;
+    height: 50%;
+  }
+  .card{
+    /* border: 1px solid #000; */
+    width: 40%;
+    gap: 30px;
+  }
+  .card .btn{
+    font-size: 20px;
+  }
+
+  /* BANNER 5 */
+
+  .banner-5{
+    width: 80%;
+  }
+  .banner-5 .cards-container{
+    gap: 6rem;
+  }
+  .banner-5 .card{
+    max-width: 400px;
+    width: 40%;
+    height: 580px;
+    gap: 10px;
+  }
+  .banner-5 .card h2{
+    font-size: 35px;
+  }
+  .banner-5 .card div{
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 25em;
+  }
+  .banner-5 #b5-card-2 p{
+    font-size: 15px;
+  }
+  #price{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3rem;
+  }
+  #price h3{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1440px){
+
+  .banner-1 .text{
+    width: 60%;
+  }
+  .banner-1 .text h1{
+    font-size: 55px;
+  }
+  .banner-1 .text p{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .banner-1 .text .btn{
+    font-size: 25px;
+  }
+
+  /* BANNER 2 */
+
+  .banner-2-container .container{
+    max-width: 1280px;
+  }
+  .banner-2-container{
+    background: url('./images/banner-2.png') center/cover no-repeat;
+  }
+  .banner-2 .text{
+    width: 60%;
+  }
+  .banner-2 .text p{
+    font-size: 25px;
+  }
+  .banner-2 .blank-field{
+    width: 40%;
+  }
+}
+@media (max-width: 1024px){
+
+  .banner-1 .text{
+    width: 60%;
+  }
+  .banner-1 .text h1{
+    font-size: 30px;
+  }
+  .banner-1 .text p{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .banner-1 .text .btn{
+    font-size: 15px;
+  }
+
+  /* BANNER 2 */
+
+  .banner-2{
+    width: 80%;
+  }
+  .banner-2 .text{
+    width: 60%;
+  }
+  .banner-2 .text p{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+   /* Banner 3 */
+
+   .banner-3 .text h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .banner-3 .sub-1 .text span{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .banner-3 .sub-1 .text p{
+    font-size: 16px;
+  }
+  .banner-3 .sub-2 .text ul{
+    font-size: 15px;
+  }
+  .banner-3 .text .btn{
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+
+  /* BANNER 4 */
+
+  .card .btn{
+    font-size: 16px;
+  }
+
+  /* BANNER 5 */
+
+  .banner-5 .cards-container{
+    gap: 2rem;
+  }
+  .banner-5 .card{
+    max-width: 500px;
+    width: 40%;
+    height: 520px;
+    gap: 10px;
+  }
+  .banner-5 .card h2{
+    font-size: 30px;
+  }
+  .banner-5 .card div{
+    font-size: 12px;
+  }
+  .banner-5 #b5-card-2 p{
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px){
+
+  .banner-1 .text{
+    width: 80%;
+  }
+  .banner-1 .text h1{
+    font-size: 35px;
+  }
+  .banner-1 .text p{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .banner-1 .text .btn{
+    font-size: 16px;
+  }
+
+  /* BANNER 4 */
+
+  .cards-container{
+    width: 100%;
+    gap: 2.5rem;
+  }
+  .cards-container img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .card .btn{
+    font-size: 10px;
+  }
+
+  /* BANNER 5 */
+
+  .banner-5 .cards-container{
+    gap: 1rem;
+  }
+  .banner-5 .card{
+    max-width: 500px;
+    width: 40%;
+    height: 480px;
+    padding: 2rem;
+    /* gap: 10px; */
+  }
+  .banner-5 .card h2{
+    font-size: 30px;
+  }
+  .banner-5 .card div{
+    font-size: 12px;
+    max-width: 35em;
+    /* border: 1px solid #000; */
+  }
+  .banner-5 #b5-card-2 p{
+    font-size: 15px;
+  }
+  .banner-5 #b5-card-2 img{
+    width: auto;
+    height: auto;
+  }
+  #price{
+    line-height: 1.5rem;
+  }
+  #price p{
+    color: grey;
+    font-size: 12px;
+  }
+  #price h3{
+    font-size: 28px;
+  }
+  #price small{
+    color: grey;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+
+  /* BANNER 1 */
+
+  .banner-1-container{
+    background: url('./images/banner-1-mobile.png') top/cover no-repeat;
+    height: 150vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .banner-1 .blank-field{
+    display: none;
+  }
+  .banner-1 .text{
+    padding-top: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  /* BANNER 2 */
+
+  .banner-2-container{
+    background: url('./images/banner-2-mobile.png') top/cover no-repeat;
+    height: 150vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .banner-2 .blank-field{
+    display: none;
+  }
+  .banner-2 .text{
+    padding-top: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  /* BANNER 3 */
+
+  .banner-3-container{
+    background: url('./images/banner-3-mobile-wa.png') center/cover no-repeat;
+    height: 220vh;
+    padding: 3rem 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-3{
+    height: 100%;
+    justify-content: space-between;
+  }
+  .banner-3 .text{
+    width: 100%;
+    text-align: center;
+  }
+  .banner-3 .sub-1 .text h2{
+    font-size: 25px;
+  }
+  .banner-3 .sub-2 .text ul{
+    text-align: left;
+  }
+  .banner-3 .blank-field{
+    display: none;
+  }
+
+  /* BANNER 4 */
+
+  .banner-4-container{
+    height: 160vh;
+    align-items: initial;
+  }
+  .banner-4{
+    height: 100%;
+  }
+  .cards-container{
+    width: 100%;
+    gap: 2.5rem;
+  }
+  .cards-container img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .card{
+    width: 80%;
+  }
+  .card .btn{
+    font-size: 10px;
+  }
+
+  /* BANNER 5 */
+  .banner-5-container{
+    height: 180vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+    /* border: 5px solid red; */
+  }
+  .banner-5{
+    height: 100%;
+  }
+  .banner-5 .cards-container{
+    gap: 3rem;
+  }
+  .banner-5 .card{
+    max-width: 500px;
+    width: 85%;
+    height: 480px;
+    padding: 2rem;
+    /* gap: 10px; */
+  }
+}
+
+@media (max-width: 380px){
+
+  .banner-1-container{
+    align-items: end;
+  }
+  .banner-1 .text{
+    padding: 0;
+    text-align: center;
+  }
+  .banner-1 .text h1{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px){
+
+  /* BANNER 1 */
+
+  .banner-1-container{
+    height: 140vh;
+    width: 100%;
+  }
+  .banner-1 .text h1{
+    font-size: 25px;
+  }
+  .banner-1 .text p{
+    font-size: 14px;
+  }
+
+  /* BANNER 2 */
+
+  .banner-2-container{
+    background: url('./images/banner-2-mobile.png') top/cover no-repeat;
+    height: 140vh;
+    width: 100%;
+  }
+  .banner-2 .text p{
+    font-size: 14px;
+  }
+
+  /* BANNER 4 */
+
+  .banner-4-container{
+    height: 130vh;
+  }
+
+  /* BANNER 5 */
+
+  .banner-5 .card{
+    max-width: 500px;
+    width: 95%;
+    height: 480px;
+    padding: 2rem;
+    /* gap: 10px; */
+  }
 }
