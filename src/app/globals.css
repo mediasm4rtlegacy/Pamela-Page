@@ -30,8 +30,13 @@ body{
   position: relative;
 }
 
+/* main{
+  max-width: 1280px;
+} */
+
 h1, h2, h3, h4, h5{
-  font-family: 'Rachelya', sans-serif;
+  /* font-family: 'Rachelya', sans-serif; */
+  font-family: Rechalya;
   color: #4F291C;
 }
 
@@ -57,7 +62,7 @@ h1, h2, h3, h4, h5{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 
   padding: 10px 20px;
   font-size: 25px;
@@ -89,7 +94,7 @@ h1, h2, h3, h4, h5{
 .banner-1{
   width: 80%;
   height: 80vh;
-  /* border: 5px solid red; */
+  border: 5px solid red;
 
   display: flex;
   flex-direction: row;
@@ -100,20 +105,32 @@ h1, h2, h3, h4, h5{
 }
 
 .banner-1 .text{
-  width: 55%;
+  width: 58%;
 }
 .banner-1 .text h1{
-  font-size: 60px;
-  color: maroon;
-  margin-bottom: 20px;
+  width: 645px;
+  color: #4F291C;
+  font-family: Rechalya;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* margin-bottom: 50px; */
 }
 .banner-1 .text p{
+  width: 633px;
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
-  max-width: 25em;
-  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 50px;
+}
+.banner-1 .text p b{
+  font-weight: 700;
 }
 .banner-1 .text .btn{
+  margin-top: 50px;
   padding: .75rem 1.25rem;
   font-size: 25px;
   border-radius: 10px;
@@ -158,18 +175,27 @@ h1, h2, h3, h4, h5{
 }
 
 .banner-2 .text{
-  width: 70%;
+  width: 50%;
   height: 100%;
   /* border: 1px solid #000; */
 }
 
+.banner-2 .text h2{
+  color: #4F291C;
+  font-family: Rachelya;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .banner-2 .text p{
   font-size: 28px;
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .banner-2 .blank-field{
-  width: 30%;
+  width: 50%;
   height: 100%;
   /* border: 1px solid #000; */
 }
@@ -178,7 +204,7 @@ h1, h2, h3, h4, h5{
 
 .banner-3-container{
   background: url('./images/banner-3-wa.jpg') center/cover no-repeat;
-  min-height: 120vh;
+  height: 150vh;
   width: 100%;
   /* border: 1px solid #000; */
   /* padding-top: 4rem; */
@@ -188,7 +214,7 @@ h1, h2, h3, h4, h5{
 }
 .banner-3{
   width: 80%;
-  height: 100vh;
+  height: 100%;
   /* border: 5px solid red; */
 
   display: flex;
@@ -199,28 +225,33 @@ h1, h2, h3, h4, h5{
   margin: 0 auto;
 }
 .banner-3 .text{
-  width: 50%;
+  width: 40%;
   height: 100%;
   /* border: 1px solid #000; */
 }
 .banner-3 .blank-field{
-  width: 50%;
+  width: 60%;
   height: 100%;
   /* border: 1px solid #000; */
 }
-
 .banner-3 .text h2{
+  color: #4F291C;
+  font-family: Rachelya;
   font-size: 60px;
-  color: maroon;
-  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .banner-3 .sub-1 .text span{
-  color: maroon;
-  font-size: 35px;
-  margin-bottom: 10px;
+  color: #4F291C;
 }
-.banner-3 .sub-1 .text p{
-  font-size: 40px;
+.banner-3 .sub-1 .text p + span{
+  color:#1E1E1E;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
 }
 .banner-3 .sub-2 .text ul{
   font-size: 35px;
@@ -298,8 +329,8 @@ h1, h2, h3, h4, h5{
   /* border: 5px solid red; */
 }
 .banner-4 .card img:hover{
-  transform: translateY(-20px);
-  box-shadow: 2px 5px 10px beige;
+  /* transform: translateY(-20px); */
+  /* box-shadow: 2px 5px 10px beige; */
 }
 
 .banner-4 .card #btn1{
@@ -394,6 +425,7 @@ h1, h2, h3, h4, h5{
   font-weight: bold;
   text-align: center;
   line-height: 3rem;
+  font-family: 'Poppins', sans-serif;
 }
 #price p{
   color: grey;
@@ -401,50 +433,73 @@ h1, h2, h3, h4, h5{
 }
 #price h3{
   font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 #price small{
   color: grey;
   font-size: 18px;
 }
 
+/* FOOTER */
+
+footer{
+  padding: 2rem;
+  background-color: #fff;
+  color: #00000085;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  
+  width: 100%;
+}
+
 /************* MEDIA QUERY ****************/
 
 @media (max-width: 2560px){
 
-  /* BANNER 2 */
+  /* BANNER 1 */
 
-  .banner-1-container .container{
+  /* .banner-1-container .container{
     max-width: 1700px;
-  }
+  } */
   .banner-1 .text{
-    width: 90%;
+    width: 65%;
+    /* border: 5px solid red; */
   }
   .banner-1 .text h1{
     font-size: 80px;
+    width: 100%;
   }
   .banner-1 .text p{
     font-size: 40px;
+    width: 100%;
   }
   .banner-1 .text .btn{
     font-size: 40px;
   }
+  .banner-1 .blank-field{
+    width: 35%;
+  }
 
   /* BANNER 2 */
 
-  .banner-2-container .container{
+  /* .banner-2-container .container{
     max-width: 1700px;
-  }
+  } */
   .banner-2-container{
-    background: url('./images/banner-2.png') left/cover no-repeat;
+    background: url('./images/banner-2.png') center/cover no-repeat;
     height: 100vh;
     width: 100%;
     /* border: 1px solid #000; */
   }
   .banner-2{
     width: 100%;
+    border: 5px solid red;
+
   }
   .banner-2 .text{
-    width: 45%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -453,40 +508,79 @@ h1, h2, h3, h4, h5{
     font-size: 35px;
   }
   .banner-2 .blank-field{
-    width: 55%;
+    width: 30%;
   }
 
    /* BANNER 3 */
 
-   .banner-3-container .container{
+   /* .banner-3-container .container{
     max-width: 1700px;
+  } */
+
+  .banner-3{
+    border: 5px solid red;
+  }
+  .banner-3 .text{
+    width: 60%;
+    border: 5px solid red;
+  }
+  .banner-3 .text h2{
+    font-size: 80px;
+  }
+  .banner-3 .text p{
+    font-size: 35px;
+  }
+  .banner-3 .blank-field{
+    width: 40%;
   }
 
    /* BANNER 4 */
 
-   .banner-4-container .container{
+   /* .banner-4-container .container{
     max-width: 1700px;
-  }
+  } */
   .cards-container{
-    /* border: 5px solid red; */
-    height: 80%;
+    border: 5px solid red;
+    height: 100%;
   
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10rem;
+    gap: 4rem;
+  }
+  .card{
+    width: 45%;
   }
   .cards-container img{
     width: 100%;
     height: 100%;
   }
-
+  .banner-4 .card .btn img{
+    width: 20px;
+    height: 20px;
+  }
   /* Banner 5 */
 
-  .banner-5-container .container{
-    max-width: 1700px;
+  .banner-5 .card{
+    width: 45%;
+    height: 900px;
+    padding: 3rem;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #ffffffc1;
+    border-radius: 10px;
+  
+    transition: all .3s;
+    /* border: 5px solid red; */
+  }
+  .banner-5 .cards-container{
+    gap: 4rem;
   }
 }
 
@@ -532,25 +626,30 @@ h1, h2, h3, h4, h5{
 
   /* Banner 3 */
 
-  .banner-3 .text h2{
-    font-size: 30px;
-    margin-bottom: 20px;
+  .banner-3 .text{
+    width: 50%;
   }
-  .banner-3 .sub-1 .text span{
-    font-size: 20px;
-    margin-bottom: 10px;
+  .banner-3 .blank-field{
+    width: 50%;
   }
-  .banner-3 .sub-1 .text p{
-    font-size: 22px;
+  .banner-3 .sub-1 .text h2{
+    font-size: 60px;
   }
-  .banner-3 .sub-2 .text ul{
-    font-size: 20px;
+  .banner-3 .sub-2 .text h2{
+    font-size: 60px;
+  }
+  .banner-3 .sub-1 .text p, .sub-1 .text span{
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .banner-3 .sub-2 .text ul li{
+    font-size: 25px;
   }
   .banner-3 .text .btn{
     margin-top: 1rem;
     font-size: 20px;
   }
-
+  
   /* BANNER 4 */
 
   .cards-container{
@@ -646,6 +745,20 @@ h1, h2, h3, h4, h5{
   .banner-2 .blank-field{
     width: 40%;
   }
+
+  .banner-3 .text{
+    width: 50%;
+    border: 5px solid red;
+  }
+  .banner-3 .text h2{
+    font-size: 60px;
+  }
+  .banner-3 .text p{
+    font-size: 25px;
+  }
+  .banner-3 .blank-field{
+    width: 50%;
+  }
 }
 @media (max-width: 1024px){
 
@@ -678,9 +791,8 @@ h1, h2, h3, h4, h5{
 
    /* Banner 3 */
 
-   .banner-3 .text h2{
-    font-size: 25px;
-    margin-bottom: 20px;
+   .banner-3 .sub-1 .text h2{
+    font-size: 40px;
   }
   .banner-3 .sub-1 .text span{
     font-size: 15px;
@@ -690,6 +802,13 @@ h1, h2, h3, h4, h5{
     font-size: 16px;
   }
   .banner-3 .sub-2 .text ul{
+    font-size: 15px;
+  }
+  .banner-3 .sub-2 .text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .banner-3 .sub-2 .text ul li{
     font-size: 15px;
   }
   .banner-3 .text .btn{
@@ -740,6 +859,16 @@ h1, h2, h3, h4, h5{
     font-size: 16px;
   }
 
+    /* BANNER 3 */
+
+  .banner-3 .text{
+    width: 60%;
+    border: 5px solid red;
+  }
+  .banner-3 .blank-field{
+    width: 40%;
+  }
+
   /* BANNER 4 */
 
   .cards-container{
@@ -758,17 +887,17 @@ h1, h2, h3, h4, h5{
   /* BANNER 5 */
 
   .banner-5 .cards-container{
-    gap: 1rem;
+    gap: 3rem;
   }
   .banner-5 .card{
     max-width: 500px;
     width: 40%;
     height: 480px;
-    padding: 2rem;
+    padding: 1.5rem;
     /* gap: 10px; */
   }
-  .banner-5 .card h2{
-    font-size: 30px;
+  .banner-5 .cards-container h2{
+    font-size: 25px;
   }
   .banner-5 .card div{
     font-size: 12px;
@@ -796,6 +925,16 @@ h1, h2, h3, h4, h5{
     color: grey;
     font-size: 10px;
   }
+  footer{
+    padding: 1rem;
+    background-color: #fff;
+    color: #00000085;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: center;
+    
+    width: 100%;
+  }
 }
 
 @media (max-width: 430px) {
@@ -814,6 +953,8 @@ h1, h2, h3, h4, h5{
     display: flex;
     justify-content: center;
     align-items: end;
+
+    padding-bottom: 3rem;
   }
 
   .banner-1 .blank-field{
@@ -825,17 +966,28 @@ h1, h2, h3, h4, h5{
     height: 100%;
     text-align: center;
   }
+  .banner-1 .text h1{
+    font-size: 40px;
+    font-family: Rachelya;
+  }
+  .banner-1 .text p{
+    text-align: left;
+    font-size: 20px;
+    margin-top: 30px;
+  }
 
   /* BANNER 2 */
 
   .banner-2-container{
     background: url('./images/banner-2-mobile.png') top/cover no-repeat;
-    height: 150vh;
+    height: 160vh;
     width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: end;
+
+    padding-bottom: 3rem;
   }
   .banner-2 .blank-field{
     display: none;
@@ -845,6 +997,12 @@ h1, h2, h3, h4, h5{
     width: 100%;
     height: 100%;
     text-align: center;
+  }
+
+  .banner-2 .text p{
+    text-align: left;
+    font-size: 16px;
+    margin-top: 10px;
   }
 
   /* BANNER 3 */
@@ -924,7 +1082,7 @@ h1, h2, h3, h4, h5{
     height: 100%;
   }
   .banner-5 .cards-container{
-    gap: 2rem;
+    gap: 1rem;
   }
   .banner-5 .card{
     max-width: 530px;
@@ -938,6 +1096,26 @@ h1, h2, h3, h4, h5{
   }
   .banner-5 .card h2{
     font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  }
+  /* #price h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+  } */
+
+  footer{
+    padding: 1rem;
+    background-color: #fff;
+    color: #00000085;
+    font-weight: 700;
+    font-size: 6px;
+    text-align: center;
+    
+    width: 100%;
+  }
+  footer span{
+  
   }
 }
 

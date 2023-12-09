@@ -44,7 +44,8 @@ export default function Home() {
             <p>Sim! Esses entre outros inúmeros motivos me fizeram <b>mudar para Portugal</b> e aqui eu te entrego <b>tudo que gostaria de saber</b> quando tomei essa decisão.</p>
 
             <Link href='/'>
-              <button className='btn'>Quero <b>morar</b> em <b>Portugal</b>
+              <button className='btn'>
+                <span>Quero <b>morar</b> em <b>Portugal</b></span>
                 <Image src={World} alt='world svg' width={0} height={0}/>
               </button>
             </Link>
@@ -136,7 +137,8 @@ export default function Home() {
                     Como fazer os documentos básicos (NIF, NISS, Passaporte, Comprovante de morada, SEF, entre outros).</li>
                 </ul>
                 <Link href='/'>
-                  <button className='btn'>Quero <b>morar</b> em <b>Portugal</b>
+                  <button className='btn'>
+                    <span>Quero <b>morar</b> em <b>Portugal</b></span>
                     <Image src={World} alt='world svg' width={0} height={0}/>
                   </button>
                 </Link>
@@ -168,7 +170,8 @@ export default function Home() {
             >
               <Image src={Card2} alt='cards' width={600} height={600}/>
               <Link href='/'>
-                <button className='btn'>Quero <b>morar</b> em <b>Portugal</b>
+                <button className='btn'>
+                  <span>Quero <b>morar</b> em <b>Portugal</b></span>
                   <Image src={World} alt='world svg' width={0} height={0}/>
                 </button>
               </Link>
@@ -216,7 +219,8 @@ export default function Home() {
               </span>
 
               <Link href='/'>
-                <button className='btn'>Quero <b>meu desconto</b>
+                <button className='btn'>
+                  <span>Quero <b>meu desconto</b></span>
                   <Image src={Gift} alt='world svg' width={20} height={20}/>
                 </button>
               </Link>
@@ -238,6 +242,9 @@ export default function Home() {
         </article>
       </section>
 
+      <footer>
+        <span>&copy; 2023 Todos os direitos reservados a Pamela Maranhão / Design: Smart Media</span>
+      </footer>
     </main>
   )
 }
