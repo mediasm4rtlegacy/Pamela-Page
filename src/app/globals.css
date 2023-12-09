@@ -800,11 +800,15 @@ h1, h2, h3, h4, h5{
 
 @media (max-width: 430px) {
 
+  .btn{
+    margin: 0 auto;
+  }
+
   /* BANNER 1 */
 
   .banner-1-container{
     background: url('./images/banner-1-mobile.png') top/cover no-repeat;
-    height: 150vh;
+    height: 160vh;
     width: 100%;
 
     display: flex;
@@ -826,7 +830,7 @@ h1, h2, h3, h4, h5{
 
   .banner-2-container{
     background: url('./images/banner-2-mobile.png') top/cover no-repeat;
-    height: 130vh;
+    height: 150vh;
     width: 100%;
 
     display: flex;
@@ -847,7 +851,7 @@ h1, h2, h3, h4, h5{
 
   .banner-3-container{
     background: url('./images/banner-3-mobile-wa.png') center/cover no-repeat;
-    height: 200vh;
+    height: 240vh;
     padding: 3rem 0;
     width: 100%;
 
@@ -884,7 +888,7 @@ h1, h2, h3, h4, h5{
   /* BANNER 4 */
 
   .banner-4-container{
-    height: 150vh;
+    height: 180vh;
     align-items: initial;
     /* border: 1px solid red; */
   }
@@ -904,12 +908,12 @@ h1, h2, h3, h4, h5{
     width: 95%;
   }
   .card .btn{
-    font-size: 15px;
+    font-size: 13px;
   }
 
   /* BANNER 5 */
   .banner-5-container{
-    height: 160vh;
+    height: 190vh;
     display: flex;
     flex-direction: column;
     justify-content: initial;
@@ -980,16 +984,28 @@ h1, h2, h3, h4, h5{
   /* BANNER 4 */
 
   .banner-4-container{
-    height: 120vh;
+    height: 140vh;
+  }
+  .banner-4 .card{
+    width: 100%;
+  }
+  .banner-4 #btn1{
+    padding: 10px;
+    font-size: 13px;
+    
   }
 
   /* BANNER 5 */
 
   .banner-5 .card{
     max-width: 580px;
-    width: 95%;
+    width: 100%;
     height: 480px;
-    padding: 2rem;
+    padding: 2rem 1rem;
     /* gap: 10px; */
+  }
+
+  .banner-5 .card .btn{
+    padding: 10px 20px;
   }
 }
