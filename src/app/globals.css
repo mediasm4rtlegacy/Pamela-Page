@@ -922,7 +922,7 @@ h1, h2, h3, h4, h5{
   }
 }
 
-@media (max-width: 320px){
+@media (max-width: 360px){
 
   /* BANNER 1 */
 
@@ -951,13 +951,13 @@ h1, h2, h3, h4, h5{
   /* BANNER 4 */
 
   .banner-4-container{
-    height: 130vh;
+    height: 120vh;
   }
 
   /* BANNER 5 */
 
   .banner-5 .card{
-    max-width: 540px;
+    max-width: 580px;
     width: 95%;
     height: 480px;
     padding: 2rem;
