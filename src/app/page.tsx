@@ -160,9 +160,9 @@ export default function Home() {
         <article className="banner-5 container">
         <div className="cards-container">
             <motion.div className="card"
-            initial={{ opacity: 0, y: 100}}
+            initial={{ opacity: 0, y: -100}}
             whileInView={{ opacity: 1, y: 0}}
-            exit={{opacity: 0, y: 100}}
+            exit={{opacity: 0, y: -100}}
             transition={{duration: 0.5}}
             >
               <h2>Oferta Exclusiva</h2>
@@ -198,9 +198,9 @@ export default function Home() {
             </motion.div>
 
             <motion.div className="card" id='b5-card-2'
-            initial={{ opacity: 0, y: 100}}
+            initial={{ opacity: 0, y: -100}}
             whileInView={{ opacity: 1, y: 0}}
-            exit={{opacity: 0, y: 100}}
+            exit={{opacity: 0, y: -100}}
             transition={{duration: 0.5}}
             >
 
