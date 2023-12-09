@@ -2,15 +2,30 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+
 import Star from '@/app/images/star.png'
 import Card1 from '@/app/images/card-1-full.png'
 import Card2 from '@/app/images/card-2-full.png'
 import Selo from '@/app/images/selo.png'
+import World from '@/app/images/world.svg'
+import Gift from '@/app/images/gift.svg'
+
 import {motion} from 'framer-motion'
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <main>
+
+      <Head>
+        <link
+          rel="preload"
+          href="/transfonter/Rachelya-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </Head>
 
       {/* BANNER 1 */}
 
@@ -28,7 +43,11 @@ export default function Home() {
             {/* <br /> */}
             <p>Sim! Esses entre outros inúmeros motivos me fizeram <b>mudar para Portugal</b> e aqui eu te entrego <b>tudo que gostaria de saber</b> quando tomei essa decisão.</p>
 
-            <Link href='/'><button className='btn'>Quero <b>morar</b> em <b>Portugal</b></button></Link>
+            <Link href='/'>
+              <button className='btn'>Quero <b>morar</b> em <b>Portugal</b>
+                <Image src={World} alt='world svg' width={0} height={0}/>
+              </button>
+            </Link>
           </motion.div>
           <div className='blank-field'></div>
         </article>
@@ -117,7 +136,9 @@ export default function Home() {
                     Como fazer os documentos básicos (NIF, NISS, Passaporte, Comprovante de morada, SEF, entre outros).</li>
                 </ul>
                 <Link href='/'>
-                  <button className='btn'>Quero <b>morar</b> em <b>Portugal</b></button>
+                  <button className='btn'>Quero <b>morar</b> em <b>Portugal</b>
+                    <Image src={World} alt='world svg' width={0} height={0}/>
+                  </button>
                 </Link>
               </motion.div>
           </div>
@@ -147,7 +168,9 @@ export default function Home() {
             >
               <Image src={Card2} alt='cards' width={600} height={600}/>
               <Link href='/'>
-                <button className='btn'>Quero <b>morar</b> em <b>Portugal</b></button>
+                <button className='btn'>Quero <b>morar</b> em <b>Portugal</b>
+                  <Image src={World} alt='world svg' width={0} height={0}/>
+                </button>
               </Link>
             </motion.div>
           </div>
@@ -193,7 +216,9 @@ export default function Home() {
               </span>
 
               <Link href='/'>
-                <button className='btn'>Quero <b>meu desconto</b></button>
+                <button className='btn'>Quero <b>meu desconto</b>
+                  <Image src={Gift} alt='world svg' width={20} height={20}/>
+                </button>
               </Link>
             </motion.div>
 
