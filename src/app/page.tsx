@@ -40,9 +40,9 @@ export default function Home() {
         <article className='banner-2 container'>
           <div className='blank-field'></div>
             <motion.div className='text'
-            initial={{ opacity: 0, x: 100}}
+            initial={{ opacity: 0, x: -100}}
             whileInView={{ opacity: 1, x: 0}}
-            exit={{opacity: 0, x: 100}}
+            exit={{opacity: 0, x: -100}}
             transition={{duration: 0.5}}
             >
               <p>
@@ -93,9 +93,9 @@ export default function Home() {
           <div className="sub-2">
             <div className="blank-field"></div>
               <motion.div className="text"
-              initial={{ opacity: 0, x: 100}}
+              initial={{ opacity: 0, x: -100}}
               whileInView={{ opacity: 1, x: 0}}
-              exit={{opacity: 0, x: 100}}
+              exit={{opacity: 0, x: -100}}
               transition={{duration: 0.5}}
               >
                 <h2>Neste e-book você aprenderá:</h2>
@@ -160,9 +160,9 @@ export default function Home() {
         <article className="banner-5 container">
         <div className="cards-container">
             <motion.div className="card"
-            initial={{ opacity: 0, x: -100}}
-            whileInView={{ opacity: 1, x: 0}}
-            exit={{opacity: 0, x: -100}}
+            initial={{ opacity: 0, y: 100}}
+            whileInView={{ opacity: 1, y: 0}}
+            exit={{opacity: 0, y: 100}}
             transition={{duration: 0.5}}
             >
               <h2>Oferta Exclusiva</h2>
@@ -198,9 +198,9 @@ export default function Home() {
             </motion.div>
 
             <motion.div className="card" id='b5-card-2'
-            initial={{ opacity: 0, x: 100}}
-            whileInView={{ opacity: 1, x: 0}}
-            exit={{opacity: 0, x: 100}}
+            initial={{ opacity: 0, y: 100}}
+            whileInView={{ opacity: 1, y: 0}}
+            exit={{opacity: 0, y: 100}}
             transition={{duration: 0.5}}
             >
 
