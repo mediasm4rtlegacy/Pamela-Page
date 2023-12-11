@@ -34,7 +34,7 @@ body{
   max-width: 1280px;
 } */
 
-h1, h2, h3, h4, h5{
+h1, h2, h3{
   /* font-family: 'Rachelya', sans-serif; */
   font-family: Rechalya;
   color: #4F291C;
@@ -178,15 +178,6 @@ h1, h2, h3, h4, h5{
   width: 50%;
   height: 100%;
   /* border: 1px solid #000; */
-}
-
-.banner-2 .text h2{
-  color: #4F291C;
-  font-family: Rachelya;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .banner-2 .text p{
@@ -469,6 +460,7 @@ footer{
   }
   .banner-1 .text h1{
     font-size: 80px;
+    font-family: Rechalya;
     width: 100%;
   }
   .banner-1 .text p{
@@ -581,6 +573,82 @@ footer{
   }
   .banner-5 .cards-container{
     gap: 4rem;
+  }
+}
+
+@media (max-width: 1920px){
+
+  .banner-1 .text{
+    width: 60%;
+  }
+  .banner-1 .text h1{
+    font-family: Rechalya;
+    font-size: 70px;
+  }
+  .banner-1 .text p{
+    font-size: 25px;
+  }
+  .banner-1 .text .btn{
+    font-size: 20px;
+  }
+  .banner-1 .blank-field{
+    width: 40%;
+    border: 1px solid red;
+  }
+
+  .banner-2-container{
+    background: url('./images/banner-2.png') left/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    /* border: 1px solid #000; */
+  }
+  .banner-2 .text{
+    width: 40%;
+  }
+  .banner-2 .text p{
+    font-size: 25px;
+  }
+  .banner-2 .blank-field{
+    width: 60%;
+  }
+
+  .banner-3-container{
+    height: 100vh;
+  }
+  .banner-3 .sub-1 .text h2{
+    font-size: 60px;
+  }
+  .banner-3 .sub-1 .text span{
+    font-size: 25px;
+  }
+  .banner-3 .sub-1 .text p{
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .banner-3 .sub-2 .text h2{
+    font-size: 60px;
+  }
+  .banner-3 .sub-2 .text ul li{
+    font-size: 25px;
+  }
+  .banner-3 .sub-2 .text .btn{
+    font-size: 20px;
+  }
+  .banner-3 .text{
+    width: 55%;
+    height: 100%;
+    border: 1px solid #000;
+  }
+  .banner-3 .blank-field{
+    width: 45%;
+    height: 100%;
+    border: 1px solid #000;
+  }
+
+  
+  .banner-4-container{
+    height: 120vh;
+    border: 1px solid red;
   }
 }
 
@@ -968,7 +1036,7 @@ footer{
   }
   .banner-1 .text h1{
     font-size: 40px;
-    font-family: Rachelya;
+    /* font-family: Rachelya; */
   }
   .banner-1 .text p{
     text-align: left;
