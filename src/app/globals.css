@@ -36,7 +36,8 @@ body{
 
 h1, h2, h3{
   /* font-family: 'Rachelya', sans-serif; */
-  font-family: Rechalya;
+  /* font-family: Rechalya; */
+  font-family: 'Rachelya';
   color: #4F291C;
 }
 
@@ -107,10 +108,11 @@ h1, h2, h3{
 .banner-1 .text{
   width: 58%;
 }
-.banner-1 .text h1{
+.banner-1 .text h2{
   width: 645px;
   color: #4F291C;
-  font-family: Rechalya;
+  /* background-color: red; */
+  font-family: 'Rachelya';
   font-size: 70px;
   font-style: normal;
   font-weight: 400;
@@ -319,10 +321,6 @@ h1, h2, h3{
   gap: 50px;
   /* border: 5px solid red; */
 }
-.banner-4 .card img:hover{
-  /* transform: translateY(-20px); */
-  /* box-shadow: 2px 5px 10px beige; */
-}
 
 .banner-4 .card #btn1{
   background: transparent;
@@ -333,7 +331,7 @@ h1, h2, h3{
 /* Banner 5 */
 
 .banner-5-container{
-  background: url('./images/banner-4.png') center/cover no-repeat;
+  background: url('./images/banner-5.png') center/cover no-repeat;
   height: 100vh;
   width: 100%;
 
@@ -378,10 +376,10 @@ h1, h2, h3{
   transition: all .3s;
   /* border: 5px solid red; */
 }
-.banner-5 .card:hover{
+/* .banner-5 .card:hover{
   transform: translateY(-20px);
   box-shadow: 0px 5px 10px rgba(208, 70, 70, 0.6);
-}
+} */
 .banner-5 .card h2{
   font-size: 40px;
 }
@@ -398,7 +396,7 @@ h1, h2, h3{
 }
 .banner-5 #b5-card-2{
   background-color: transparent;
-  border: 1px solid maroon;
+  /* border: 1px solid maroon; */
 
   /* text-align: center; */
   display: flex;
@@ -458,9 +456,10 @@ footer{
     width: 65%;
     /* border: 5px solid red; */
   }
-  .banner-1 .text h1{
+  .banner-1 .text h2{
     font-size: 80px;
-    font-family: Rechalya;
+    /* font-family: Rechalya; */
+    font-family: 'Rachelya';
     width: 100%;
   }
   .banner-1 .text p{
@@ -505,13 +504,6 @@ footer{
 
    /* BANNER 3 */
 
-   /* .banner-3-container .container{
-    max-width: 1700px;
-  } */
-
-  .banner-3{
-    /* border: 5px solid red; */
-  }
   .banner-3 .text{
     width: 60%;
     /* border: 5px solid red; */
@@ -593,7 +585,7 @@ footer{
   }
   .banner-1 .blank-field{
     width: 40%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   .banner-2-container{
@@ -635,21 +627,53 @@ footer{
     font-size: 20px;
   }
   .banner-3 .text{
-    width: 55%;
+    width: 50%;
     height: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
   .banner-3 .blank-field{
-    width: 45%;
+    width: 50%;
     height: 100%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
 
-  
   .banner-4-container{
     height: 120vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
+
+  .banner-5 .card{
+    padding: 40px;
+  }
+  .banner-5 .card h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .banner-5 .card div{
+    color: #4F291C;
+    font-size: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 25em;
+  }
+}
+.banner-5 .card div b{
+  font-weight: 700;
+}
+#price h3{
+  font-size: 68px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+#price:first-child p{
+  font-size: 24px;
+  text-decoration: line-through;
 }
 
 @media (max-width: 1600px){
@@ -694,6 +718,9 @@ footer{
 
   /* Banner 3 */
 
+  .banner-3-container{
+    height: 150vh;
+  }
   .banner-3 .text{
     width: 50%;
   }
@@ -753,7 +780,7 @@ footer{
     gap: 10px;
   }
   .banner-5 .card h2{
-    font-size: 45px;
+    font-size: 40px;
   }
   .banner-5 .card div{
     font-size: 15px;
@@ -786,10 +813,10 @@ footer{
     width: 60%;
   }
   .banner-1 .text h1{
-    font-size: 55px;
+    font-size: 40px;
   }
   .banner-1 .text p{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 10px;
   }
   .banner-1 .text .btn{
@@ -814,31 +841,45 @@ footer{
     width: 40%;
   }
 
+  .banner-3-container{
+    height: 120vh;
+  }
   .banner-3 .text{
     width: 50%;
     /* border: 5px solid red; */
   }
-  .banner-3 .text h2{
-    font-size: 60px;
+  .banner-3 .sub-1 .text h2{
+    font-size: 50px;
   }
-  .banner-3 .text p{
-    font-size: 25px;
+  .banner-3 .sub-2 .text h2{
+    font-size: 50px;
+  }
+  .banner-3 .sub-1 .text p, .sub-1 .text span{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .banner-3 .sub-2 .text ul li{
+    font-size: 20px;
   }
   .banner-3 .blank-field{
     width: 50%;
   }
+
+  .banner-5 .card h2{
+    font-size: 40px;
+  } 
 }
 @media (max-width: 1024px){
 
   .banner-1 .text{
     width: 60%;
   }
-  .banner-1 .text h1{
-    font-size: 30px;
+  .banner-1 .text h2{
+    font-size: 40px;
   }
   .banner-1 .text p{
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .banner-1 .text .btn{
     font-size: 15px;
@@ -887,7 +928,7 @@ footer{
   /* BANNER 4 */
 
   .card .btn{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /* BANNER 5 */
@@ -1015,14 +1056,16 @@ footer{
 
   .banner-1-container{
     background: url('./images/banner-1-mobile.png') top/cover no-repeat;
-    height: 160vh;
+    height: 170vh;
     width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: end;
 
-    padding-bottom: 3rem;
+    /* border: 1px solid red; */
+
+    padding-bottom: 8rem;
   }
 
   .banner-1 .blank-field{
@@ -1034,14 +1077,15 @@ footer{
     height: 100%;
     text-align: center;
   }
-  .banner-1 .text h1{
-    font-size: 40px;
+  .banner-1 .text h2{
+    font-size: 50px;
+    margin-bottom: 50px;
     /* font-family: Rachelya; */
   }
   .banner-1 .text p{
     text-align: left;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
   }
 
   /* BANNER 2 */
@@ -1055,7 +1099,8 @@ footer{
     justify-content: center;
     align-items: end;
 
-    padding-bottom: 3rem;
+    padding-bottom: 30px;
+    /* border: 5px solid red; */
   }
   .banner-2 .blank-field{
     display: none;
@@ -1066,11 +1111,16 @@ footer{
     height: 100%;
     text-align: center;
   }
-
   .banner-2 .text p{
     text-align: left;
-    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
     margin-top: 10px;
+  }
+  .banner-2 .text p b{
+    font-weight: 700;
   }
 
   /* BANNER 3 */
@@ -1114,16 +1164,18 @@ footer{
   /* BANNER 4 */
 
   .banner-4-container{
+    background: url('./images/banner-5-mobile.png');
     height: 180vh;
     align-items: initial;
-    /* border: 1px solid red; */
+    padding: 2rem 0;
+    /* border: 5px solid red; */
   }
   .banner-4{
     height: 100%;
   }
   .cards-container{
     width: 100%;
-    gap: 2.5rem;
+    gap: 0rem;
   }
   .cards-container img{
     border-radius: 10px;
@@ -1139,18 +1191,20 @@ footer{
 
   /* BANNER 5 */
   .banner-5-container{
-    height: 190vh;
+    background: url('./images/banner-5-mobile.png');
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: initial;
     align-items: inherit;
+    padding: 1rem 0;
     /* border: 5px solid red; */
   }
   .banner-5{
     height: 100%;
   }
   .banner-5 .cards-container{
-    gap: 1rem;
+    gap: 0aarem;
   }
   .banner-5 .card{
     max-width: 530px;
@@ -1163,14 +1217,36 @@ footer{
     width: 20px;
   }
   .banner-5 .card h2{
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
   }
-  /* #price h3{
+  .banner-5 .card div p{
+    font-size: 12px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+  }
+  .banner-5 .card div p b{
     font-weight: 700;
-  } */
+
+  }
+  .banner-5 #b5-card-2{
+    display: none;
+  }
+  #price{
+    line-height: 1.5rem;
+  }
+  #price p{
+    color: grey;
+    font-size: 12px;
+  }
+  #price h3{
+    font-size: 43px;
+  }
+  #price small{
+    color: grey;
+    font-size: 10px;
+  }
 
   footer{
     padding: 1rem;
@@ -1182,22 +1258,47 @@ footer{
     
     width: 100%;
   }
-  footer span{
-  
-  }
 }
 
 @media (max-width: 380px){
 
   .banner-1-container{
-    align-items: end;
+    height: 130vh;
+    padding: 0;
   }
   .banner-1 .text{
-    padding: 0;
-    text-align: center;
+    height: 60vh;
+    justify-content: end;
+    border: 5px solid red;
   }
-  .banner-1 .text h1{
-    font-size: 30px;
+  .banner-1 .text h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .banner-1 .text p{
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .banner-1 .text .btn{
+    margin-top: 30px;
+  }
+
+
+  .banner-2-container{
+    padding-bottom: 0px;
+    height: 130vh;
+  }
+  .banner-2 .text p{
+    font-size: 15px;
+  }
+
+  .banner-3 .sub-2 .text .btn{
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+
+  .card .btn{
+    font-size: 12px;
   }
 }
 
@@ -1206,38 +1307,62 @@ footer{
   /* BANNER 1 */
 
   .banner-1-container{
-    height: 140vh;
-    width: 100%;
+    height: 120vh;
+    padding: 0;
   }
-  .banner-1 .text h1{
-    font-size: 25px;
+  .banner-1 .text h2{
+    font-size: 30px;
+    margin-bottom: 10px;
   }
   .banner-1 .text p{
     font-size: 14px;
+  }
+  .banner-1 .text .btn{
+    font-size: 12px;
   }
 
   /* BANNER 2 */
 
   .banner-2-container{
     background: url('./images/banner-2-mobile.png') top/cover no-repeat;
-    height: 140vh;
+    height: 130vh;
     width: 100%;
+    padding: 1rem 0;
+  }
+  .banner-2-container{
+    padding-bottom: 20px;
   }
   .banner-2 .text p{
     font-size: 14px;
   }
 
+  .banner-3-container{
+    height: 230vh;
+  }
+  .banner-3 .sub-1 .text h2{
+    font-size: 30px;
+  }
+  .banner-3 .sub-1 .text p{
+    font-size: 15px;
+  }
+  .banner-3 .sub-2 .text h2{
+    font-size: 30px;
+  }
+  .banner-3 .sub-2 .text ul li{
+    font-size: 15px;
+  }
+
   /* BANNER 4 */
 
   .banner-4-container{
-    height: 140vh;
+    height: 150vh;
   }
   .banner-4 .card{
     width: 100%;
   }
   .banner-4 #btn1{
     padding: 10px;
-    font-size: 13px;
+    font-size: 12px;
     
   }
 
@@ -1247,7 +1372,7 @@ footer{
     max-width: 580px;
     width: 100%;
     height: 480px;
-    padding: 2rem 1rem;
+    padding: 1rem;
     /* gap: 10px; */
   }
 

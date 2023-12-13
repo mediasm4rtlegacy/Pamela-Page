@@ -37,7 +37,7 @@ export default function Home() {
           exit={{opacity: 0, x: -100}}
           transition={{duration: 0.5}}
           >
-            <h1>O guia completo para morar em Portugal em 2024!</h1>
+            <h2>O guia completo para morar em Portugal em 2024!</h2>
             <p>Morar em um país de primeiro mundo, <b>compras no mercado com menos de 100 euros, tomar bons vinhos, viver em um clima europeu e ter qualidade de vida.</b>
             </p>
             {/* <br /> */}
@@ -201,11 +201,11 @@ export default function Home() {
               </div>
 
               <span id='price'>
-                <p>
+                <p style={{textDecoration: 'line-through'}}>
                   DE R$ 995,50
                 </p>
 
-                <p>
+                <p style={{color: '#4F291C'}} id='p'>
                   POR 10X de
                 </p>
 
