@@ -233,10 +233,10 @@ export default function Home() {
             transition={{duration: 0.5}}
             >
 
-              {/* <Image src={Selo} alt='selo' width={0} height={0}/>
+              <Image src={Selo} alt='selo' width={0} height={0}/>
               <p>Após adquirir o e-book, <b>você terá 7 dias</b> para acompanhar os conteúdos e se adaptar.
               </p>
-              <p>Se dentro desse período, <b>você sentir que não é pra você,</b> é só me pedir que eu devolvo 100% do valor investido.</p> */}
+              <p>Se dentro desse período, <b>você sentir que não é pra você,</b> é só me pedir que eu devolvo 100% do valor investido.</p>
             </motion.div>
           </div>
         </article>
