@@ -1127,7 +1127,7 @@ footer{
 
   .banner-3-container{
     background: url('./images/banner-3-mobile-wa.png') center/cover no-repeat;
-    height: 240vh;
+    height: 190vh;
     padding: 3rem 0;
     width: 100%;
 
@@ -1161,13 +1161,18 @@ footer{
     font-size: 18px;
   }
 
+  .banner-3 .sub-2 .text .btn{
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+
   /* BANNER 4 */
 
   .banner-4-container{
     background: url('./images/banner-5-mobile.png');
     height: 180vh;
     align-items: initial;
-    padding: 2rem 0;
+    /* padding: 0rem 0; */
     /* border: 5px solid red; */
   }
   .banner-4{
@@ -1192,7 +1197,7 @@ footer{
   /* BANNER 5 */
   .banner-5-container{
     background: url('./images/banner-5-mobile.png');
-    height: 17q0vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     justify-content: initial;
@@ -1269,7 +1274,7 @@ footer{
   .banner-1 .text{
     height: 60vh;
     justify-content: end;
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
   .banner-1 .text h2{
     font-size: 40px;
