@@ -43,7 +43,7 @@ export default function Home() {
             {/* <br /> */}
             <p>Sim! Esses entre outros inúmeros motivos me fizeram <b>mudar para Portugal</b> e aqui eu te entrego <b>tudo que gostaria de saber</b> quando tomei essa decisão.</p>
 
-            <Link href='/'>
+            <Link href='https://chk.eduzz.com/1235886'>
               <button className='btn'>
                 <span>Quero <b>morar</b> em <b>Portugal</b></span>
                 <Image src={World} alt='world svg' width={0} height={0}/>
@@ -136,7 +136,7 @@ export default function Home() {
                       <Image src={Star} width={20} height={20} alt='arrow'/>
                     Como fazer os documentos básicos (NIF, NISS, Passaporte, Comprovante de morada, SEF, entre outros).</li>
                 </ul>
-                <Link href='/'>
+                <Link href='https://chk.eduzz.com/1235886'>
                   <button className='btn'>
                     <span>Quero <b>morar</b> em <b>Portugal</b></span>
                     <Image src={World} alt='world svg' width={0} height={0}/>
@@ -169,7 +169,7 @@ export default function Home() {
             transition={{duration: 0.5}}
             >
               <Image src={Card2} alt='cards' width={600} height={600}/>
-              <Link href='/'>
+              <Link href='https://chk.eduzz.com/1235886'>
                 <button className='btn'>
                   <span>Quero <b>morar</b> em <b>Portugal</b></span>
                   <Image src={World} alt='world svg' width={0} height={0}/>
@@ -218,7 +218,7 @@ export default function Home() {
                 </small>
               </span>
 
-              <Link href='/'>
+              <Link href='https://chk.eduzz.com/1235886'>
                 <button className='btn'>
                   <span>Quero <b>meu desconto</b></span>
                   <Image src={Gift} alt='world svg' width={20} height={20}/>
